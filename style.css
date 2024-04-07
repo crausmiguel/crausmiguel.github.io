@@ -101,7 +101,7 @@ html:focus-within {
     background-size: 2vh 1vh;
     background-repeat: repeat;
     transform-origin: 100% 0 0;
-    animation: intro 5s linear forwards, play 10s linear infinite 5s;
+    animation: intro 5s linear forwards, play 30s linear infinite 5s;
     z-index: -1;
 }
 
@@ -137,6 +137,7 @@ html:focus-within {
     background-color: rgb(26, 27, 29);
     border: solid #dfdfdf 0.2em;
     position: absolute;
+    max-width: 30em;
 }
 
 .window-1-bar {
@@ -156,6 +157,12 @@ html:focus-within {
     margin-top: 150px;
     margin-left: 80px;
     border: solid #dfdfdf 0.2em;
+    
+    max-width: 30em;
+}
+
+.header{
+    margin-top: 22em;display: flex; flex-wrap: wrap;
 }
 
 .window-2-bar {
@@ -175,6 +182,7 @@ html:focus-within {
     margin-top: 20px;
     margin-left: 250px;
     border: solid #dfdfdf 0.2em;
+    max-width: 30em;
 }
 
 .window-3-bar {
@@ -244,7 +252,7 @@ html:focus-within {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    animation: eyeball-1 3s infinite;
+    animation: eyeball-1 5s infinite;
 }
 
 @keyframes eyeball-1 {
@@ -289,7 +297,7 @@ html:focus-within {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    animation: eyeball-2 3s infinite;
+    animation: eyeball-2 5s infinite;
 }
 
 @keyframes eyeball-2 {
@@ -334,7 +342,7 @@ html:focus-within {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    animation: eyeball-3 3s infinite;
+    animation: eyeball-3 5s infinite;
 }
 
 @keyframes eyeball-3 {
@@ -437,10 +445,15 @@ html:focus-within {
     .banner {
         margin-left: 5em;
         margin-top: 14em;
+        height: 20em;
+    }
+
+    .header{
+        margin: 0;
     }
 
     .eyes{
-        padding-left: 1.2em;
+        padding-left: 1.1em;
     }
 
     .eye{
