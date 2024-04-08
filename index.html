@@ -154,22 +154,22 @@
                         NOT
                         <span style="color: whitesmoke;">SAFE</span></span>
                     <br>
-                    <span class="name">João V. Miguel</span>
+                    <span class="name">Count Zero</span>
                     <br>
-                    <span class="job">Pentester</span>
+                    <span class="job">Title</span>
                 </div>
             </div>
         </div>
 
-        <div class="row" style="height: 2000px; background-color: yellow; margin-bottom: 50px;" id="panel-1">
+        <div class="row" style="height: 800px; border: solid rgba(211, 197, 4, 0.6) 2px; margin-bottom: 50px;" id="panel-1">
 
         </div>
 
-        <div class="row" style="height: 2000px; background-color: rgb(53, 42, 204); margin-bottom: 50px;" id="panel-2">
+        <div class="row" style="height: 800px; border: solid rgb(53, 42, 204) 2px; margin-bottom: 50px;" id="panel-2">
 
         </div>
 
-        <div class="row" style="height: 2000px; background-color: rgb(179, 9, 51);" id="panel-3">
+        <div class="row" style="height: 800px; border: solid rgb(179, 9, 51) 2px;" id="panel-3">
 
         </div>
 
@@ -193,11 +193,8 @@
             var buttons = document.getElementById("buttons");
             var logo = document.getElementById("logo");
             var navbar = document.getElementById("navbar");
-            var menu_buttons = document.querySelectorAll("#menu-button")
 
-            menu_buttons.forEach(button => {
-                button.classList.toggle('button-change-color', window.scrollY > 25);
-            });
+           
             logo.classList.toggle('logo-animation', window.scrollY > 25);
             buttons.classList.toggle('button-animation', window.scrollY > 25);
             navbar.classList.toggle('navbar-animation', window.scrollY > 25);

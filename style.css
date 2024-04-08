@@ -78,12 +78,10 @@ html:focus-within {
     height: 1em;
 }
 
-.button-change-color {
-    color: rgb(29, 30, 34)
-}
+
 
 .navbar-animation {
-    background-color: #faa916;
+    background-color: #1A1B1D;
 }
 
 
@@ -98,7 +96,7 @@ html:focus-within {
 }
 
 .grid-lines {
-    background-image: linear-gradient(to right, rgba(187, 10, 10, 0.5) 1px, transparent 0), linear-gradient(to bottom, rgba(187, 10, 10, 0.4) 1px, transparent 0);
+    background-image: linear-gradient(to right, rgba(187, 10, 10, 0.6) 1px, transparent 0), linear-gradient(to bottom, rgba(187, 10, 10, 0.8) 1px, transparent 0);
     background-size: 2vh 1vh;
     background-repeat: repeat;
     transform-origin: 100% 0 0;
@@ -143,12 +141,12 @@ html:focus-within {
 
 .window-1-bar {
     height: 1em;
-    background-color: rgb(192, 11, 11);
+    background-color: #faa916;
 }
 
 .window-1-button {
     height: 1em;
-    background-color: rgb(17, 192, 11);
+    background-color: #6d676e;
 }
 
 .window-2 {
@@ -173,12 +171,12 @@ html:focus-within {
 
 .window-2-bar {
     height: 1em;
-    background-color: rgb(23, 11, 192);
+    background-color: #96031a;
 }
 
 .window-2-button {
     height: 1em;
-    background-color: rgb(17, 192, 11);
+    background-color: #16db65;
 }
 
 .window-3 {
@@ -193,7 +191,7 @@ html:focus-within {
 
 .window-3-bar {
     height: 1em;
-    background-color: rgb(192, 11, 177);
+    background-color: #dfdfdf;
 }
 
 .window-3-button {
@@ -421,9 +419,42 @@ html:focus-within {
         height: 0%;
     }
 }
+@media only screen and (min-width: 990px) and (max-width: 1200px) {
 
+    .eyes{
+        padding-left: 2em;
+    }
 
-@media only screen and (max-width: 1000px) {
+    .eye{
+        margin: 30px;
+    
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 990px) {
+
+    .eyes{
+        padding-left: 0.5em;
+    }
+
+    .eye{
+        margin: 30px;
+    
+    }
+
+    .banner {
+        margin-left: 5em;
+        margin-top: 14em;
+        height: 20em;
+    }
+
+    .header{
+        margin: 0;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
     #logo {
         height: 110px;
     }
@@ -497,3 +528,15 @@ html:focus-within {
     font-style: normal;
     line-height: 1em;
 }
+/* 
+#dfdfdf Branco
+
+#faa916 Amarelo 
+#96031a Vermelho
+#6d676e Cinza
+#1A1B1D Preto claro
+
+#16db65 Verde Claro
+#058c42 Verde
+
+#de9e36 Dourado */
