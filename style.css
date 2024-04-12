@@ -1,3 +1,5 @@
+@import 'typed';
+
 *,
 html {
     scroll-behavior: smooth !important;
@@ -9,13 +11,17 @@ html:focus-within {
 }
 
 
-
+@keyframes caret {
+    50% {
+        border-color: transparent;
+    }
+}
 
 #buttons {
     position: absolute;
     top: 50px;
     right: 0;
-    height: 50px;
+    height: 120px;
 }
 
 #logo {
@@ -35,13 +41,14 @@ html:focus-within {
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 50px;
+    height: 100px;
     z-index: 10;
 }
 
 .logo-img {
-    height: 50px;
-    width: 50px;
+    margin-top: 40px;
+    height: 80px;
+    width: 80px;
 }
 
 
@@ -54,7 +61,7 @@ html:focus-within {
 
 .custom-col {
     width: 100%;
-    height: 50px;
+    height: 150px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -75,7 +82,7 @@ html:focus-within {
 .button-animation {
     right: 0;
     position: absolute;
-    height: 1em;
+    height: 11em;
 }
 
 
@@ -86,7 +93,7 @@ html:focus-within {
 
 
 .grid-mask {
-    opacity: 55%;
+    opacity: 80%;
     z-index: -1;
 }
 
@@ -96,7 +103,7 @@ html:focus-within {
 }
 
 .grid-lines {
-    background-image: linear-gradient(to right, rgba(187, 10, 10, 0.6) 1px, transparent 0), linear-gradient(to bottom, rgba(187, 10, 10, 0.8) 1px, transparent 0);
+    background-image: linear-gradient(to right, rgba(187, 10, 10, 0.3) 1px, transparent 0), linear-gradient(to bottom, rgba(187, 10, 10, 0.3) 1px, transparent 0);
     background-size: 2vh 1vh;
     background-repeat: repeat;
     transform-origin: 100% 0 0;
@@ -156,13 +163,13 @@ html:focus-within {
     margin-top: 150px;
     margin-left: 80px;
     border: solid #dfdfdf 0.2em;
-    
+
     max-width: 30em;
 }
 
-.header{
+.header {
     margin-top: 12em;
-    display: flex; 
+    display: flex;
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
@@ -199,31 +206,31 @@ html:focus-within {
     background-color: #faa916;
 }
 
-.button-window-1{
-    padding: 0; 
-    justify-content:flex-end; 
-    display: flex; 
+.button-window-1 {
+    padding: 0;
+    justify-content: flex-end;
+    display: flex;
     font-size: 10px;
 }
 
-.button-window-2{
-    padding: 0; 
-    justify-content:flex-end; 
-    display: flex; 
-    color:  rgb(23, 11, 192);
+.button-window-2 {
+    padding: 0;
+    justify-content: flex-end;
+    display: flex;
+    color: rgb(23, 11, 192);
     font-size: 10px;
 }
 
-.button-window-3{
-    padding: 0; 
-    justify-content:flex-end; 
+.button-window-3 {
+    padding: 0;
+    justify-content: flex-end;
     color: rgb(192, 11, 177);
-    display: flex; 
+    display: flex;
     font-size: 10px;
 }
 
 
-.eyes{
+.eyes {
     padding-top: 150px;
     transform: translateY(-50%);
     width: 460px;
@@ -233,7 +240,7 @@ html:focus-within {
     padding-left: 2em;
 }
 
-.eye{
+.eye {
     width: 80px;
     height: 80px;
     background-color: #dfdfdf;
@@ -242,11 +249,11 @@ html:focus-within {
     transform: rotate(45deg);
     margin: 50px;
     overflow: hidden;
-    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 
 }
 
-.eyeball-1{
+.eyeball-1 {
     width: 20px;
     height: 20px;
     background-color: rgb(26, 27, 29);
@@ -255,8 +262,8 @@ html:focus-within {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    animation: eyeball-1 5s infinite;
+    transform: translate(-50%, -50%);
+    /* animation: eyeball-1 5s infinite; */
 }
 
 @keyframes eyeball-1 {
@@ -282,7 +289,7 @@ html:focus-within {
         top: 20%;
         left: 50%;
         transform: translate(-50%, -20%);
-       }
+    }
 
     100% {
         top: 50%;
@@ -291,7 +298,7 @@ html:focus-within {
     }
 }
 
-.eyeball-2{
+.eyeball-2 {
     width: 20px;
     height: 20px;
     background-color: rgb(26, 27, 29);
@@ -300,8 +307,8 @@ html:focus-within {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    animation: eyeball-2 5s infinite;
+    transform: translate(-50%, -50%);
+    /* animation: eyeball-2 5s infinite; */
 }
 
 @keyframes eyeball-2 {
@@ -327,7 +334,7 @@ html:focus-within {
         top: 20%;
         left: 50%;
         transform: translate(-50%, -20%);
-       }
+    }
 
     100% {
         top: 50%;
@@ -336,7 +343,7 @@ html:focus-within {
     }
 }
 
-.eyeball-3{
+.eyeball-3 {
     width: 20px;
     height: 20px;
     background-color: rgb(26, 27, 29);
@@ -345,8 +352,8 @@ html:focus-within {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
-    animation: eyeball-3 5s infinite;
+    transform: translate(-50%, -50%);
+    /* animation: eyeball-3 5s infinite; */
 }
 
 @keyframes eyeball-3 {
@@ -372,7 +379,7 @@ html:focus-within {
         top: 20%;
         left: 50%;
         transform: translate(-50%, -20%);
-       }
+    }
 
     100% {
         top: 50%;
@@ -380,66 +387,67 @@ html:focus-within {
         transform: translate(-50%, -50%);
     }
 
-  
+
 }
 
-.eyelid{
+.eyelid {
     width: 200px;
     height: 100px;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
     z-index: 1000;
 }
 
-.eyelid span{
+.eyelid span {
     display: block;
     width: 100%;
     height: 20%;
     background-color: rgb(26, 27, 29);
     border-radius: 0 0 60% 60%;
-    animation: eyelid 5.5s infinite;
+    animation: eyelid 10s infinite;
 }
 
-@keyframes eyelid{
-    0%{
+@keyframes eyelid {
+    0% {
         height: 10%;
     }
 
-    10%{
+    10% {
         height: 100%;
     }
 
-    20%{
+    20% {
         height: 0%;
     }
 
-    100%{
+    100% {
         height: 0%;
     }
 }
+
 @media only screen and (min-width: 990px) and (max-width: 1200px) {
 
-    .eyes{
+    .eyes {
         padding-left: 2em;
     }
 
-    .eye{
+    .eye {
         margin: 30px;
-    
+
     }
 }
 
-@media only screen and (min-width: 800px) and (max-width: 990px) {
+@media only screen and (min-width: 991px) and (max-width: 990px) {
 
-    .eyes{
+    .eyes {
         padding-left: 0.5em;
     }
 
-    .eye{
+    .eye {
         margin: 30px;
-    
+
     }
 
     .banner {
@@ -448,13 +456,13 @@ html:focus-within {
         height: 20em;
     }
 
-    .header{
+    .header {
         margin: 0;
     }
 
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 990px) {
     #logo {
         height: 110px;
     }
@@ -467,7 +475,7 @@ html:focus-within {
 
     .btn {
         font-size: 1.8em;
-        width: 250px;
+        width: 240px;
     }
 
     #buttons {
@@ -485,22 +493,22 @@ html:focus-within {
         height: 20em;
     }
 
-    .header{
+    .header {
         margin: 0;
     }
 
-    .eyes{
+    .eyes {
         padding-left: 1.1em;
     }
 
-    .eye{
+    .eye {
         margin: 30px;
-    
+
     }
 
 }
 
-.title{
+.title {
     font-size: 3em;
     font-family: "Yanone Kaffeesatz";
     font-optical-sizing: auto;
@@ -509,7 +517,7 @@ html:focus-within {
     line-height: 1em;
 }
 
-.name{
+.name {
     font-size: 5em;
     font-family: "Yanone Kaffeesatz";
     font-optical-sizing: auto;
@@ -518,25 +526,24 @@ html:focus-within {
     line-height: 1em;
 }
 
-.job{
+.job {
     color: #FAA916;
     font-size: 2em;
-    border-radius: 10%;;
+    border-radius: 10%;
+    ;
     font-family: "Yanone Kaffeesatz";
     font-optical-sizing: auto;
     font-weight: 400;
     font-style: normal;
     line-height: 1em;
 }
+
 /* 
 #dfdfdf Branco
-
 #faa916 Amarelo 
 #96031a Vermelho
 #6d676e Cinza
 #1A1B1D Preto claro
-
 #16db65 Verde Claro
 #058c42 Verde
-
 #de9e36 Dourado */
