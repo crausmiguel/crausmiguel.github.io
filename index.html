@@ -34,12 +34,12 @@
                     <div class="custom-col" id="buttons">
                         <div>
                             <a href="#panel-1">
-                                <button class="btn btn-outline-light" id="menu-button">Exp</button>
+                                <button class="btn btn-outline-light exp" id="menu-button">Exp</button>
                             </a>
                         </div>
                         <div>
                             <a href="#panel-2">
-                                <button class="btn btn-outline-light" id="menu-button">Projects</button>
+                                <button class="btn btn-outline-light " id="menu-button">Projects</button>
                             </a>
                         </div>
                         <div>
@@ -156,7 +156,6 @@
                     <br>
                     <span class="name">Count Zero</span>
                     <br>
-                    <span class="job"><img src="gif.gif" class="red-text" style="height: 50px;"></span>
                 </div>
             </div>
         </div>
@@ -216,8 +215,23 @@
         });
 
     </script>
+    <script>
+        // You can replace the text below with your desired words
+        const textToType = "Hello, world! This is a typewriter effect.";
 
- 
+        let i = 0;
+        function typeWriter() {
+            if (i < textToType.length) {
+                document.querySelector(".typewriter h1").innerHTML += textToType.charAt(i);
+                i++;
+                setTimeout(typeWriter, 50); // Adjust the speed as needed
+            }
+        }
+
+        // Start the typing effect
+        typeWriter();
+    </script>
+
 </body>
 
 </html>

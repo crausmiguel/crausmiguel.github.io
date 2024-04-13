@@ -21,7 +21,7 @@ html:focus-within {
     position: absolute;
     top: 50px;
     right: 0;
-    height: 120px;
+    height: 70px;
 }
 
 #logo {
@@ -41,14 +41,14 @@ html:focus-within {
     text-align: center;
     align-items: center;
     flex-wrap: wrap;
-    height: 100px;
+    height: 70px;
     z-index: 10;
 }
 
 .logo-img {
-    margin-top: 40px;
-    height: 80px;
-    width: 80px;
+    margin-top: 20px;
+    height: 60px;
+    width: 60px;
 }
 
 
@@ -68,6 +68,7 @@ html:focus-within {
     transition: all 1s ease;
     position: relative;
 }
+
 
 
 
@@ -468,9 +469,11 @@ html:focus-within {
     }
 
     .logo-img {
-        height: 100px;
-        width: 100px;
+        margin-left: 2em;
+        height: 90px;
+        width: 90px;
     }
+
 
 
     .btn {
@@ -478,13 +481,20 @@ html:focus-within {
         width: 240px;
     }
 
+    
+    .exp{
+        width: 150px;
+    }
+
     #buttons {
-        height: 140px;
+        height: 155px;
     }
 
     .navbar-animation {
-        background-color: #faa916;
         height: 120px;
+    }
+    .button-animation{
+        justify-content: end;
     }
 
     .banner {
@@ -506,16 +516,11 @@ html:focus-within {
 
     }
 
+    
+
+
 }
 
-.title {
-    font-size: 3em;
-    font-family: "Yanone Kaffeesatz";
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1em;
-}
 
 .name {
     font-size: 5em;
