@@ -24,10 +24,11 @@ html:focus-within {
     height: 70px;
 }
 
+
 #logo {
-    position: absolute;
     height: 50px;
     top: 0;
+    display: flex;
 }
 
 .navbar {
@@ -46,7 +47,7 @@ html:focus-within {
 }
 
 .logo-img {
-    margin-top: 20px;
+    margin-top: 1em;
     height: 60px;
     width: 60px;
 }
@@ -407,7 +408,7 @@ html:focus-within {
     height: 20%;
     background-color: rgb(26, 27, 29);
     border-radius: 0 0 60% 60%;
-    animation: eyelid 10s infinite;
+    animation: eyelid 6s infinite;
 }
 
 @keyframes eyelid {
@@ -469,7 +470,6 @@ html:focus-within {
     }
 
     .logo-img {
-        margin-left: 2em;
         height: 90px;
         width: 90px;
     }
@@ -478,7 +478,7 @@ html:focus-within {
 
     .btn {
         font-size: 1.8em;
-        width: 240px;
+        width: 200px;
     }
 
     
@@ -488,6 +488,7 @@ html:focus-within {
 
     #buttons {
         height: 155px;
+        display: flex;
     }
 
     .navbar-animation {
@@ -508,7 +509,7 @@ html:focus-within {
     }
 
     .eyes {
-        padding-left: 1.1em;
+        padding-left: 1em;
     }
 
     .eye {
@@ -521,9 +522,14 @@ html:focus-within {
 
 }
 
+.title{
+    height: 30px;
+    margin-left: 2.6em;
+}
 
 .name {
     font-size: 5em;
+    color: #faa916;
     font-family: "Yanone Kaffeesatz";
     font-optical-sizing: auto;
     font-weight: bold;
@@ -531,17 +537,7 @@ html:focus-within {
     line-height: 1em;
 }
 
-.job {
-    color: #FAA916;
-    font-size: 2em;
-    border-radius: 10%;
-    ;
-    font-family: "Yanone Kaffeesatz";
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1em;
-}
+
 
 /* 
 #dfdfdf Branco

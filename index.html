@@ -28,7 +28,9 @@
             <div class="col-12">
                 <div class="navbar" id="navbar">
                     <div class="custom-col" id="logo">
-                        <img src="icon.png" class="logo-img" alt="img">
+                        <a href="#panel-0">
+                            <img src="icon.png" class="logo-img" alt="img">
+                        </a>
                     </div>
 
                     <div class="custom-col" id="buttons">
@@ -39,12 +41,12 @@
                         </div>
                         <div>
                             <a href="#panel-2">
-                                <button class="btn btn-outline-light " id="menu-button">Projects</button>
+                                <button class="btn btn-outline-light " id="menu-button">Works</button>
                             </a>
                         </div>
                         <div>
                             <a href="#panel-3">
-                                <button class="btn btn-outline-light" id="menu-button">Trivia</button>
+                                <button class="btn btn-outline-light" id="menu-button">Certs</button>
                             </a>
                         </div>
                     </div>
@@ -156,6 +158,7 @@
                     <br>
                     <span class="name">Count Zero</span>
                     <br>
+                    <img class="title" src="gif.gif">
                 </div>
             </div>
         </div>
@@ -193,6 +196,7 @@
             var buttons = document.getElementById("buttons");
             var logo = document.getElementById("logo");
             var navbar = document.getElementById("navbar");
+            var container = document.querySelector(".container");
 
 
             logo.classList.toggle('logo-animation', window.scrollY > 25);
@@ -202,6 +206,8 @@
             function animateNavbar() {
                 if (window.scrollY > 25) {
                     buttons.style.top = 0;
+                    container.id = "panel-0"
+                    logo.style.zIndex = 1;
 
                 } else {
                     buttons.style.top = "50px";
