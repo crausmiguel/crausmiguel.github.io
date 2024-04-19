@@ -169,6 +169,10 @@ html:focus-within {
     max-width: 30em;
 }
 
+.header-text{
+    height: 35em;
+}
+
 .header {
     margin-top: 12em;
     display: flex;
@@ -232,203 +236,6 @@ html:focus-within {
 }
 
 
-.eyes {
-    padding-top: 150px;
-    transform: translateY(-50%);
-    width: 460px;
-    text-align: center;
-    flex-direction: row;
-    display: flex;
-    padding-left: 2em;
-}
-
-.eye {
-    width: 80px;
-    height: 80px;
-    background-color: #dfdfdf;
-    display: inline-block;
-    border-radius: 100% 0;
-    transform: rotate(45deg);
-    margin: 50px;
-    overflow: hidden;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
-
-}
-
-.eyeball-1 {
-    width: 20px;
-    height: 20px;
-    background-color: rgb(26, 27, 29);
-    border-radius: 50%;
-    border: 20px solid rgb(26, 27, 29);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* animation: eyeball-1 5s infinite; */
-}
-
-@keyframes eyeball-1 {
-    0% {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    25% {
-        top: 48%;
-        left: 20%;
-        transform: translate(-50%, -0%);
-    }
-
-    50% {
-        top: 48%;
-        left: 80%;
-        transform: translate(-80%, -00%);
-    }
-
-    75% {
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -20%);
-    }
-
-    100% {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
-.eyeball-2 {
-    width: 20px;
-    height: 20px;
-    background-color: rgb(26, 27, 29);
-    border-radius: 50%;
-    border: 20px solid rgb(26, 27, 29);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* animation: eyeball-2 5s infinite; */
-}
-
-@keyframes eyeball-2 {
-    0% {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    50% {
-        top: 48%;
-        left: 20%;
-        transform: translate(-50%, -0%);
-    }
-
-    25% {
-        top: 48%;
-        left: 80%;
-        transform: translate(-80%, -00%);
-    }
-
-    75% {
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -20%);
-    }
-
-    100% {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-}
-
-.eyeball-3 {
-    width: 20px;
-    height: 20px;
-    background-color: rgb(26, 27, 29);
-    border-radius: 50%;
-    border: 20px solid rgb(26, 27, 29);
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    /* animation: eyeball-3 5s infinite; */
-}
-
-@keyframes eyeball-3 {
-    0% {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-    50% {
-        top: 48%;
-        left: 20%;
-        transform: translate(-50%, -0%);
-    }
-
-    75% {
-        top: 48%;
-        left: 80%;
-        transform: translate(-80%, -00%);
-    }
-
-    25% {
-        top: 20%;
-        left: 50%;
-        transform: translate(-50%, -20%);
-    }
-
-    100% {
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-    }
-
-
-}
-
-.eyelid {
-    width: 200px;
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%) rotate(-45deg);
-    z-index: 1000;
-}
-
-.eyelid span {
-    display: block;
-    width: 100%;
-    height: 20%;
-    background-color: rgb(26, 27, 29);
-    border-radius: 0 0 60% 60%;
-    animation: eyelid 6s infinite;
-}
-
-@keyframes eyelid {
-    0% {
-        height: 10%;
-    }
-
-    10% {
-        height: 100%;
-    }
-
-    20% {
-        height: 0%;
-    }
-
-    100% {
-        height: 0%;
-    }
-}
-
 @media only screen and (min-width: 990px) and (max-width: 1200px) {
 
     .eyes {
@@ -439,6 +246,10 @@ html:focus-within {
         margin: 30px;
 
     }
+
+    
+
+ 
 }
 
 @media only screen and (min-width: 991px) and (max-width: 990px) {
@@ -461,6 +272,8 @@ html:focus-within {
     .header {
         margin: 0;
     }
+
+ 
 
 }
 
@@ -515,6 +328,10 @@ html:focus-within {
     .eye {
         margin: 30px;
 
+    }
+
+    .header-text{
+        height: 45em;
     }
 
     
