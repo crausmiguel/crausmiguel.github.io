@@ -1,17 +1,71 @@
 
+.grid-mask {
+    opacity: 80%;
+    z-index: -1;
+}
+
+.grid {
+    position: fixed;
+    z-index: -1;
+}
+
+.grid-lines {
+    background-image: linear-gradient(to right, rgba(167, 11, 11,0.5) 1px, transparent 0), 
+    linear-gradient(to bottom, rgba(167, 11, 11,0.5) 1px, transparent 0);
+    background-size: 2vh 1vh;
+    background-repeat: repeat;
+    transform-origin: 100% 0 0;
+    animation: intro 5s linear forwards, play 30s linear infinite 5s;
+    z-index: -1;
+}
+
+@keyframes intro {
+    0% {
+        transform: rotateX(10deg) translateY(-50%);
+    }
+
+    100% {
+        transform: rotateX(50deg) translateY(0);
+    }
+
+}
+
+@keyframes play {
+    0% {
+        transform: rotateX(50deg) translateY(-50%);
+    }
+
+    100% {
+        transform: rotateX(50deg) translateY(0);
+    }
+}
+
 
 *,
 html {
     scroll-behavior: smooth !important;
-    color: red;
+    color: #db3131;
 }
 
 .text-about{
-    text-align: center; color: #dfdfdf; font-family: Yanone Kaffeesatz; font-size: 1.3em;
+    text-align: center; color: #dcdfe5; font-family: Yanone Kaffeesatz; font-size: 1.3em;
 }
 
 html:focus-within {
     scroll-behavior: smooth;
+}
+
+.social-button{
+    height: 2.5em;
+    transition: all 0.2s;
+}
+
+.social-button:hover{
+    height: 3.0em;
+}
+
+.image-btn{
+    height: 3em;
 }
 
 
@@ -26,6 +80,8 @@ html:focus-within {
     top: 50px;
     right: 0;
     height: 70px;
+    margin-top: 1.8em;
+    
 }
 
 
@@ -72,6 +128,7 @@ html:focus-within {
     justify-content: center;
     transition: all 1s ease;
     position: relative;
+    gap: 4em;
 }
 
 
@@ -106,7 +163,7 @@ html:focus-within {
 
 .window-1 {
     height: 10em;
-    background-color: rgb(26, 27, 29);
+    background-color: #1A1B1D;
     border: solid #dfdfdf 0.2em;
     position: absolute;
     max-width: 30em;
@@ -119,7 +176,7 @@ html:focus-within {
 
 .window-1-button {
     height: 1em;
-    background-color: #6d676e;
+    background-color: #5a5a5a;
 }
 
 .window-2 {
@@ -148,12 +205,12 @@ html:focus-within {
 
 .window-2-bar {
     height: 1em;
-    background-color: #96031a;
+    background-color: #a70b0b;
 }
 
 .window-2-button {
     height: 1em;
-    background-color: #16db65;
+    background-color: #a70b0b;
 }
 
 .window-3 {
@@ -187,14 +244,14 @@ html:focus-within {
     padding: 0;
     justify-content: flex-end;
     display: flex;
-    color: rgb(23, 11, 192);
+    color: #a70b0b;
     font-size: 10px;
 }
 
 .button-window-3 {
     padding: 0;
     justify-content: flex-end;
-    color: rgb(192, 11, 177);
+    color: #a70b0b;
     display: flex;
     font-size: 10px;
 }
@@ -236,6 +293,7 @@ html:focus-within {
     .header {
         margin: 0;
     }
+    
 
  
 
@@ -307,14 +365,39 @@ html:focus-within {
          line-height: 1em;
     }
 
+    #logo{
+        opacity: 0;
+    }
+
+    .custom-col{
+        gap: 10em;
+    }
+
+    .image-btn{
+        height: 5em;
+    }
+
+  
+    .social-button{
+        height: 4em;
+        
+        margin-bottom: 2em;
+    }
     
+    .social-text{
+        font-size: 1.3em;
+    }
+
+    .exp-title{
+        margin-top: 2em;
+    }
+
 
 
 }
 
 .title{
     height: 30px;
-    margin-left: 2.6em;
 }
 
 .name {
@@ -337,3 +420,4 @@ html:focus-within {
 #16db65 Verde Claro
 #058c42 Verde
 #de9e36 Dourado */
+
