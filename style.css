@@ -55,9 +55,17 @@ html:focus-within {
     scroll-behavior: smooth;
 }
 
+.border-right{
+    border-right: solid #faa916 1px;
+}
+
 .social-button{
     height: 2.5em;
     transition: all 0.2s;
+    margin-top: 2em;
+    border: solid #dcdfe5 0.1em ;
+    border-radius: 100%;
+    margin-bottom: 2em;
 }
 
 .social-button:hover{
@@ -80,7 +88,6 @@ html:focus-within {
     top: 50px;
     right: 0;
     height: 70px;
-    margin-top: 1.8em;
     
 }
 
@@ -267,7 +274,9 @@ html:focus-within {
         margin: 30px;
 
     }
-
+    .border-right{
+        border-right: none;
+    }
     
 
  
@@ -293,7 +302,9 @@ html:focus-within {
     .header {
         margin: 0;
     }
-    
+    .border-right{
+        border-right: none;
+    }
 
  
 
@@ -322,15 +333,12 @@ html:focus-within {
     }
 
     #buttons {
-        height: 155px;
+        height: 120px;
         display: flex;
     }
 
     .navbar-animation {
         height: 120px;
-    }
-    .button-animation{
-        justify-content: end;
     }
 
     .banner {
@@ -380,8 +388,6 @@ html:focus-within {
   
     .social-button{
         height: 4em;
-        
-        margin-bottom: 2em;
     }
     
     .social-text{
@@ -390,6 +396,10 @@ html:focus-within {
 
     .exp-title{
         margin-top: 2em;
+    }
+
+    .border-right{
+        border-right: none;
     }
 
 
