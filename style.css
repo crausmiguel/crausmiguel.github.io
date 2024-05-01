@@ -88,7 +88,6 @@ html:focus-within {
     top: 50px;
     right: 0;
     height: 70px;
-    margin-top: 1.5em;
 }
 
 
@@ -96,6 +95,9 @@ html:focus-within {
     height: 50px;
     top: 0;
     display: flex;
+    opacity: 0;
+    margin-top: 0.5em;
+    
 }
 
 .navbar {
@@ -114,7 +116,6 @@ html:focus-within {
 }
 
 .logo-img {
-    margin-top: 1em;
     height: 60px;
     width: 60px;
 }
@@ -373,9 +374,6 @@ html:focus-within {
          line-height: 1em;
     }
 
-    #logo{
-        opacity: 0;
-    }
 
     .custom-col{
         gap: 10em;
