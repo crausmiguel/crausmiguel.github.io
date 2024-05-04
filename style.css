@@ -60,16 +60,16 @@ html:focus-within {
 }
 
 .social-button{
-    height: 2.5em;
+    height: 3em;
     transition: all 0.2s;
     margin-top: 2em;
-    border: solid #dcdfe5 0.1em ;
+    border: solid #dcdfe5 0.2em ;
     border-radius: 100%;
     margin-bottom: 2em;
 }
 
 .social-button:hover{
-    height: 3.0em;
+    height: 5.0em;
 }
 
 .image-btn{
