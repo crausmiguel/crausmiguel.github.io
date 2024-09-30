@@ -48,7 +48,7 @@ html {
 }
 
 .text-about{
-    text-align: center; color: #dcdfe5; font-family: Yanone Kaffeesatz; font-size: 1.3em;
+    text-align: center; color: #dcdfe5; font-family: Yanone Kaffeesatz; font-size: 1.5em; line-height: 1em; text-align: justify; text-transform: none;
 }
 
 html:focus-within {

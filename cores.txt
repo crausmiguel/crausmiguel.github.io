@@ -1,6 +1,0 @@
-Light Yellow #f6de26
-Dark Yellow #f1ba0a
-Light Red #a70b0b
-Dark Red #850a0a
-Gray #5a5a5a
-White #dcdfe5
